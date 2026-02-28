@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SkinGadget UK — honest, UK-focused guides to at-home skincare devices (LED masks, microcurrent tools)." />
+  <title>SkinGadget UK — At‑Home Skincare Devices</title>
+
+  <meta property="og:title" content="SkinGadget UK — At‑Home Skincare Devices" />
+  <meta property="og:description" content="Concise UK buyer’s guides to LED masks and microcurrent devices." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --ink:#0c0f14;
+      --muted:#5b6472;
+      --line:#e8ecf2;
+      --card:#f7f8fb;
+      --accent:#6d28d9; /* purple */
+      --accent2:#0ea5e9; /* cyan */
+      --good:#15803d;
+      --warn:#b45309;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(10, 20, 40, .08);
+      --max:1080px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; }
+    a{ color:inherit; text-decoration:none; }
+    a.underline{ text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:24px; }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:12px 24px;
+      max-width:var(--max);
+      margin:0 auto;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:800;
+      letter-spacing:-.02em;
+    }
+    .logo{
+      width:34px;
+      height:34px;
+      border-radius:10px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow:0 10px 20px rgba(109,40,217,.18);
+    }
+    .nav a{ color:var(--muted); font-weight:600; }
+    .nav a:hover{ color:var(--ink); }
+    .navlinks{ display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end; }
+
+    .hero{
+      padding:56px 0 22px;
+    }
+    h1{
+      font-size: clamp(28px, 4vw, 44px);
+      line-height:1.08;
+      letter-spacing:-.03em;
+      margin:0 0 12px;
+    }
+    .sub{
+      max-width:70ch;
+      color:var(--muted);
+      font-size: clamp(16px, 2vw, 18px);
+      margin:0 0 22px;
+    }
+
+    .pillrow{ display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 0; }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-weight:650;
+    }
+    .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); }
+    .dot.cyan{ background:var(--accent2); }
+
+    .callout{
+      display:flex;
+      gap:12px;
+      padding:14px 14px;
+      border-radius:14px;
+      background:linear-gradient(180deg, #fbfbfe, #f7f8fb);
+      border:1px solid var(--line);
+      box-shadow:0 8px 24px rgba(10, 20, 40, .05);
+      color:var(--muted);
+      margin:18px 0 0;
+    }
+    .callout strong{ color:var(--ink); }
+    .badge{
+      flex:0 0 auto;
+      width:34px;
+      height:34px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 8px 20px rgba(10, 20, 40, .04);
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .section{ padding:26px 0; border-top:1px solid var(--line); }
+    .section:first-of-type{ border-top:none; }
+
+    h2{
+      font-size: clamp(20px, 2.2vw, 28px);
+      letter-spacing:-.02em;
+      margin:0 0 10px;
+    }
+    .kicker{ color:var(--muted); max-width:75ch; margin:0 0 18px; }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+    }
+
+    .card{
+      grid-column: span 6;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 10px 30px rgba(10, 20, 40, .05);
+    }
+    .card h3{ margin:0 0 8px; font-size:18px; letter-spacing:-.01em; }
+
+    .meta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:0 0 10px;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      font-weight:650;
+    }
+
+    ul{ margin:10px 0 0; padding-left:18px; color:var(--muted); }
+    li{ margin:6px 0; }
+
+    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:750;
+      color:var(--ink);
+      transition: transform .06s ease;
+    }
+    .btn:hover{ transform: translateY(-1px); }
+    .btn.primary{ background:linear-gradient(135deg, var(--accent), #8b5cf6); color:#fff; border-color:transparent; }
+    .btn.secondary{ color:var(--accent); }
+
+    .twoCol{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .panel{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 10px 30px rgba(10, 20, 40, .05);
+    }
+    .panel h3{ margin:0 0 8px; }
+
+    details{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; }
+    details + details{ margin-top:10px; }
+    summary{ cursor:pointer; font-weight:800; letter-spacing:-.01em; }
+    details p{ margin:10px 0 0; color:var(--muted); }
+
+    footer{ padding:26px 0 44px; color:var(--muted); }
+    footer .footgrid{ display:grid; grid-template-columns: 1fr auto; gap:12px; align-items:start; }
+    .fine{ font-size:13px; }
+    .fine a{ color:var(--accent); font-weight:650; }
+
+    .note{ font-size:13px; color:var(--muted); margin-top:12px; }
+
+    @media (max-width: 860px){
+      .card{ grid-column: span 12; }
+      .twoCol{ grid-template-columns:1fr; }
+      .navlinks{ display:none; }
+      .hero{ padding-top:34px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="logo" aria-hidden="true"></span>
+        <span>SkinGadget UK</span>
+      </a>
+      <div class="navlinks">
+        <a href="#led">LED masks</a>
+        <a href="#micro">Microcurrent</a>
+        <a href="#compare">Comparisons</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <section class="hero" aria-label="Introduction">
+      <h1>At‑Home Skincare Devices — UK buyer’s guides</h1>
+      <p class="sub">Short, practical guides for people about to spend real money on LED masks and microcurrent devices. No hype — just what matters for UK buyers: safety, warranty, usability, and value.</p>
+
+      <div class="pillrow" aria-label="Quick links">
+        <a class="pill" href="#led"><span class="dot"></span>LED masks</a>
+        <a class="pill" href="#micro"><span class="dot cyan"></span>Microcurrent</a>
+        <a class="pill" href="#compare"><span class="dot" style="background:#111827"></span>Comparisons</a>
+      </div>
+
+      <div class="callout" role="note" aria-label="Affiliate disclosure">
+        <div class="badge" aria-hidden="true">A</div>
+        <div>
+          <div><strong>Disclosure:</strong> As an Amazon Associate, SkinGadget UK earns from qualifying purchases.</div>
+          <div class="note">This helps fund testing and keep guides free. It does not change the price you pay.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Method">
+      <h2>How picks are chosen</h2>
+      <p class="kicker">This site is intentionally minimal. The goal is to help you avoid expensive mistakes, not to list every product ever made.</p>
+      <div class="twoCol">
+        <div class="panel">
+          <h3>Selection criteria</h3>
+          <ul>
+            <li>UK availability and realistic return options.</li>
+            <li>Clear power/safety information from the manufacturer (where available).</li>
+            <li>Warranty length and support quality (as reported by buyers).</li>
+            <li>Usability: session time, comfort, cleaning, and charging.</li>
+            <li>Value: total cost including gels, attachments, and consumables.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Important note</h3>
+          <ul>
+            <li>This is informational and not medical advice.</li>
+            <li>If you have a skin condition, check with a qualified professional before using at-home devices.</li>
+            <li>Always follow manufacturer instructions and safety guidance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="led" class="section" aria-label="LED masks">
+      <h2>LED masks</h2>
+      <p class="kicker">LED devices are typically bought for acne-prone skin (blue light), redness (red light), or overall tone/texture. Focus on comfort, coverage, and return policy.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Best overall (flexible mask)</h3>
+          <div class="meta">
+            <span class="tag">Comfort first</span>
+            <span class="tag">Full coverage</span>
+            <span class="tag">Easy routine</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> People who will actually use it 3–5× per week.</li>
+            <li><strong>Why:</strong> Comfortable fit tends to beat "most powerful" claims for long-term use.</li>
+            <li><strong>Watch out:</strong> Check eye protection guidance and session-time instructions.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+            <a class="btn secondary" href="#compare">Compare types</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best budget starter</h3>
+          <div class="meta">
+            <span class="tag">Under £100</span>
+            <span class="tag">Simple controls</span>
+            <span class="tag">Low risk</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> First-time buyers who want to test the habit.</li>
+            <li><strong>Why:</strong> You’re buying consistency, not miracles.</li>
+            <li><strong>Watch out:</strong> Flimsy straps and awkward charging ports.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best rigid mask (quick sessions)</h3>
+          <div class="meta">
+            <span class="tag">Stable fit</span>
+            <span class="tag">Fast routine</span>
+            <span class="tag">Less fiddly</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> People who want a structured, quick routine.</li>
+            <li><strong>Why:</strong> Rigid masks can be easier to position consistently.</li>
+            <li><strong>Watch out:</strong> Comfort varies wildly by face shape.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best for acne-focused routines</h3>
+          <div class="meta">
+            <span class="tag">Blue light</span>
+            <span class="tag">Targeted use</span>
+            <span class="tag">Consistency</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> Acne-prone skin routines where you’ll stick to a schedule.</li>
+            <li><strong>Why:</strong> Good habit + gentle use tends to beat buying the fanciest device.</li>
+            <li><strong>Watch out:</strong> Avoid aggressive claims; focus on comfort and safe use.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">Next step (after Amazon approval): replace the Amazon links above with product-specific affiliate links and a tracking ID.</p>
+    </section>
+
+    <section id="micro" class="section" aria-label="Microcurrent">
+      <h2>Microcurrent devices</h2>
+      <p class="kicker">Microcurrent devices are often bought for a "toned" look and facial massage effect. Most of the real-world difference is ergonomics and whether you’ll use conductive gel properly.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Best overall starter kit</h3>
+          <div class="meta">
+            <span class="tag">Ergonomic</span>
+            <span class="tag">Easy routine</span>
+            <span class="tag">Good resale</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> Beginners who want a simple 5–10 minute routine.</li>
+            <li><strong>Why:</strong> Comfort and habit beat maximum intensity.</li>
+            <li><strong>Watch out:</strong> Gel cost adds up — budget for it.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+            <a class="btn secondary" href="#compare">Compare devices</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best value under £150</h3>
+          <div class="meta">
+            <span class="tag">Budget</span>
+            <span class="tag">Good enough</span>
+            <span class="tag">Low regret</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> People who want results-per-pound.</li>
+            <li><strong>Why:</strong> Spend the savings on a better gel and consistency.</li>
+            <li><strong>Watch out:</strong> Cheap devices can have confusing controls.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best for jawline + cheek routine</h3>
+          <div class="meta">
+            <span class="tag">Grip</span>
+            <span class="tag">Targeted</span>
+            <span class="tag">Comfort</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> People who want a guided routine (repeatable steps).</li>
+            <li><strong>Why:</strong> Repeatability improves consistency and reduces "random rubbing".</li>
+            <li><strong>Watch out:</strong> Don’t use on broken skin; follow device guidance.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Best travel-friendly option</h3>
+          <div class="meta">
+            <span class="tag">Small</span>
+            <span class="tag">USB charging</span>
+            <span class="tag">Quick sessions</span>
+          </div>
+          <ul>
+            <li><strong>Best for:</strong> People who need “no excuses” portability.</li>
+            <li><strong>Why:</strong> If it lives in your bathroom drawer, you’ll use it.</li>
+            <li><strong>Watch out:</strong> Battery life claims vary — check reviews.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/" target="_blank" rel="nofollow noopener">See options on Amazon</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">Important: microcurrent typically requires conductive gel. If you hate fiddly routines, you may prefer LED.</p>
+    </section>
+
+    <section id="compare" class="section" aria-label="Comparisons">
+      <h2>Comparisons (quick)</h2>
+      <p class="kicker">The aim here is to reduce regret. These are "what matters" comparisons, not spec-sheet theatre.</p>
+
+      <div class="twoCol">
+        <div class="panel">
+          <h3>LED masks: flexible vs rigid</h3>
+          <ul>
+            <li><strong>Flexible:</strong> Usually more comfortable, better for sticking to the habit.</li>
+            <li><strong>Rigid:</strong> Usually easier positioning, sometimes quicker sessions.</li>
+            <li><strong>Bottom line:</strong> Choose the one you’ll use 3× per week.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Microcurrent: comfort beats intensity</h3>
+          <ul>
+            <li><strong>Ergonomics:</strong> You need stable grip and predictable movement.</li>
+            <li><strong>Gel:</strong> Required for most devices; factor ongoing cost.</li>
+            <li><strong>Bottom line:</strong> Pick a device you can keep by the sink and use quickly.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:16px;" role="note">
+        <div class="badge" aria-hidden="true">i</div>
+        <div>
+          <div><strong>Next iteration:</strong> Once your Associates tracking ID is issued, add a small comparison table with 3 named devices in each category and link to them directly.</div>
+          <div class="note">This keeps the page useful and avoids looking like a generic affiliate directory.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-label="FAQ">
+      <h2>FAQ</h2>
+      <p class="kicker">These answers are deliberately short. They exist to help buyers make safe, boring decisions.</p>
+
+      <details>
+        <summary>Will Amazon links work before I’m approved?</summary>
+        <p>Yes — this site currently links to Amazon without a tracking ID. After approval, replace these with affiliate links that include your Associates tracking ID.</p>
+      </details>
+      <details>
+        <summary>Do I need a separate “Privacy Policy” page?</summary>
+        <p>It’s strongly recommended. Add it now and keep it simple: what data you collect (usually none), cookies/analytics (if any), and affiliate disclosure. See the Privacy page link in the header.</p>
+      </details>
+      <details>
+        <summary>Should this be more “blog-like” for approval?</summary>
+        <p>Not necessarily, but it should be clearly useful and original. This page includes methodology, comparisons, and FAQ to avoid looking like a thin affiliate directory.</p>
+      </details>
+      <details>
+        <summary>Can I show prices on the site?</summary>
+        <p>Avoid hard-coding prices. Keep wording evergreen: “budget”, “mid-range”, “premium”. If you later use Amazon’s tools/API, follow their requirements.</p>
+      </details>
+      <details>
+        <summary>How do I get my first 3 qualifying sales?</summary>
+        <p>After approval, publish pins pointing to this page and focus on high-intent queries (e.g., “best LED face mask UK”). Avoid asking friends/family to buy through your links, as personal purchases may not qualify.</p>
+      </details>
+      <details>
+        <summary>Do I need Google Analytics?</summary>
+        <p>No. Keep it minimal. Pinterest Analytics is enough at launch. Add analytics later if you’re measuring conversion funnels.</p>
+      </details>
+
+    </section>
+
+    <footer aria-label="Footer">
+      <div class="footgrid">
+        <div>
+          <div><strong>SkinGadget UK</strong> — minimal guides to at-home skincare devices.</div>
+          <div class="fine">Disclosure: As an Amazon Associate, SkinGadget UK earns from qualifying purchases.</div>
+          <div class="fine"><a href="privacy.html">Privacy policy</a> · <a href="#top">Back to top</a></div>
+        </div>
+        <div class="fine">Last updated: <span id="lastUpdated">2026‑02‑28</span></div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Keep last-updated current for small edits
+    (function(){
+      try {
+        const el = document.getElementById('lastUpdated');
+        const d = new Date();
+        const yyyy = d.getFullYear();
+        const mm = String(d.getMonth()+1).padStart(2,'0');
+        const dd = String(d.getDate()).padStart(2,'0');
+        el.textContent = `${yyyy}-${mm}-${dd}`;
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
