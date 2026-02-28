@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SkinGadget UK — honest UK guides to LED masks and microcurrent gadgets available on Amazon. Skip the fluff, avoid buyer’s remorse." />
-  <title>SkinGadget UK — LED Masks & Microcurrent Devices (Amazon UK)</title>
+  <meta name="description" content="SkinGadget UK — honest UK buyer guides to LED masks, microcurrent, IPL, facial steamers, and gua sha tools. Skip the fluff, avoid buyer’s remorse." />
+  <title>SkinGadget UK — At-Home Skincare Devices (Honest Reviews)</title>
 
-  <meta property="og:title" content="SkinGadget UK — LED Masks & Microcurrent (No Fluff)" />
-  <meta property="og:description" content="UK buyer guides. Real talk about LED masks and microcurrent tools available on Amazon UK." />
+  <meta property="og:title" content="SkinGadget UK — At-Home Skincare Devices (No Fluff)" />
+  <meta property="og:description" content="UK buyer guides. Real talk about LED masks, microcurrent, IPL, and more." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -95,9 +95,13 @@
       border:1px solid var(--line);
       color:var(--muted);
       font-weight:650;
+      transition: all .15s ease;
     }
+    .pill:hover{ background:var(--card); border-color:var(--accent); }
     .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); }
     .dot.cyan{ background:var(--accent2); }
+    .dot.green{ background:var(--good); }
+    .dot.orange{ background:var(--warn); }
 
     .callout{
       display:flex;
@@ -148,7 +152,9 @@
       border-radius:var(--radius);
       padding:16px;
       box-shadow:0 10px 30px rgba(10, 20, 40, .05);
+      transition: all .2s ease;
     }
+    .card:hover{ box-shadow:0 14px 40px rgba(10, 20, 40, .1); transform: translateY(-2px); }
     .card h3{ margin:0 0 8px; font-size:18px; letter-spacing:-.01em; }
 
     .meta{
@@ -185,10 +191,11 @@
       background:#fff;
       font-weight:750;
       color:var(--ink);
-      transition: transform .06s ease;
+      transition: all .15s ease;
     }
-    .btn:hover{ transform: translateY(-1px); }
+    .btn:hover{ transform: translateY(-1px); box-shadow:0 6px 18px rgba(10, 20, 40, .1); }
     .btn.primary{ background:linear-gradient(135deg, var(--accent), #8b5cf6); color:#fff; border-color:transparent; }
+    .btn.primary:hover{ box-shadow:0 8px 24px rgba(109,40,217,.25); }
     .btn.secondary{ color:var(--accent); }
 
     .twoCol{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
@@ -201,7 +208,8 @@
     }
     .panel h3{ margin:0 0 8px; }
 
-    details{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; }
+    details{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:12px 14px; transition: all .15s ease; }
+    details:hover{ border-color:var(--accent); }
     details + details{ margin-top:10px; }
     summary{ cursor:pointer; font-weight:800; letter-spacing:-.01em; }
     details p{ margin:10px 0 0; color:var(--muted); }
@@ -232,9 +240,10 @@
       <div class="navlinks">
         <a href="#led">LED masks</a>
         <a href="#micro">Microcurrent</a>
-        <a href="#compare">Compare</a>
+        <a href="#ipl">IPL</a>
+        <a href="#steamers">Steamers</a>
+        <a href="#guasha">Gua Sha</a>
         <a href="#faq">FAQ</a>
-        <a href="privacy.html">Privacy</a>
       </div>
     </nav>
   </header>
@@ -242,44 +251,47 @@
   <main id="top" class="wrap">
 
     <section class="hero" aria-label="Introduction">
-      <h1>LED Masks & Microcurrent Devices (UK)</h1>
-      <p class="sub">You’re about to spend £100+ on a gadget that might sit in a drawer after three uses. This site exists to stop that happening. Real talk, UK returns policies, and zero fluff.</p>
+      <h1>At-Home Skincare Devices (UK)</h1>
+      <p class="sub">You’re about to spend £100+ on a gadget that might sit in a drawer after three uses. This site exists to stop that happening. Real talk about what works, what doesn’t, and what’s worth your money.</p>
 
       <div class="pillrow" aria-label="Quick links">
         <a class="pill" href="#led"><span class="dot"></span>LED masks</a>
         <a class="pill" href="#micro"><span class="dot cyan"></span>Microcurrent</a>
-        <a class="pill" href="#compare"><span class="dot" style="background:#111827"></span>Compare</a>
+        <a class="pill" href="#ipl"><span class="dot orange"></span>IPL hair removal</a>
+        <a class="pill" href="#steamers"><span class="dot green"></span>Facial steamers</a>
+        <a class="pill" href="#guasha"><span class="dot" style="background:#6b7280"></span>Gua sha & rollers</a>
       </div>
 
       <div class="callout" role="note" aria-label="Affiliate disclosure">
         <div class="badge" aria-hidden="true">A</div>
         <div>
           <div><strong>Full disclosure:</strong> I earn a small commission if you buy through Amazon links here (at no extra cost to you).</div>
-          <div class="note">Think of it as a tip for saving you from a £300 impulse buy you’d regret in a month.</div>
+          <div class="note">Think of it as a tip for saving you from a £300 impulse buy you’d regret in a month. I only recommend stuff that’s actually available on Amazon UK and has real reviews backing it up.</div>
         </div>
       </div>
     </section>
 
     <section class="section" aria-label="Method">
       <h2>How this works</h2>
-      <p class="kicker">I’m not listing every device on Amazon. I’m helping you dodge the obvious mistakes and buy something you’ll actually use.</p>
+      <p class="kicker">I’m not listing every device on Amazon. I’m helping you dodge the obvious mistakes and buy something you’ll actually use more than twice.</p>
       <div class="twoCol">
         <div class="panel">
           <h3>What I look for</h3>
           <ul>
-            <li>Available on Amazon UK with Prime delivery.</li>
-            <li>Clear safety info (or at least not actively sketchy).</li>
-            <li>Warranty that’s longer than a Tesco receipt’s lifespan.</li>
-            <li>Comfortable enough you’ll use it more than twice.</li>
-            <li>Honest total cost (gels, attachments, the lot).</li>
+            <li>Available on Amazon UK with Prime delivery (no 6-week China shipping).</li>
+            <li>Real reviews from UK buyers, not fake 5-star spam.</li>
+            <li>Warranty that lasts longer than milk.</li>
+            <li>Comfortable enough you won’t dread using it.</li>
+            <li>Honest total cost (ongoing gels, refills, the lot).</li>
           </ul>
         </div>
         <div class="panel">
           <h3>The boring legal bit</h3>
           <ul>
             <li>This is not medical advice (obviously).</li>
-            <li>Got a skin condition? Ask your GP or derm first, not Pinterest.</li>
-            <li>Follow the instructions, don’t freestyle it.</li>
+            <li>Got a skin condition? Ask your GP or derm first, not TikTok.</li>
+            <li>Follow the instructions. Don’t freestyle it and blame me when your face hurts.</li>
+            <li>Pregnant, epileptic, or have a pacemaker? Check contraindications before buying anything.</li>
           </ul>
         </div>
       </div>
@@ -287,7 +299,7 @@
 
     <section id="led" class="section" aria-label="LED masks">
       <h2>LED masks</h2>
-      <p class="kicker">People buy these for acne (blue light), redness (red), or general “glow” vibes. The real question: will you wear it, or will it become a £200 dust collector?</p>
+      <p class="kicker">People buy these for acne (blue light), redness (red), or general “glow” vibes. The real question: will you wear it, or will it become an expensive hat for your bedpost?</p>
 
       <div class="grid">
         <article class="card">
@@ -298,12 +310,12 @@
             <span class="tag">270 LEDs</span>
           </div>
           <ul>
-            <li><strong>Why it wins:</strong> Multi-award-winning, 270 LEDs, 4 colour modes (red, blue, amber, purple + NIR). Women's Health and Woman&Home both tested it — noticeably brighter skin, fewer breakouts after a few months.</li>
+            <li><strong>Why it wins:</strong> Multi-award-winning, 270 LEDs, 4 colour modes (red, blue, amber, purple + NIR). Women's Health and Woman&Home both tested it — noticeably brighter skin, fewer breakouts after consistent use.</li>
             <li><strong>Real talk:</strong> At Argos for same-day pickup. Rechargeable with handheld remote. Comfortable fit with adjustable Velcro straps. Best budget-friendly option that doesn’t feel cheap.</li>
-            <li><strong>Catch:</strong> Not as powerful as £400+ clinical masks, but at this price you can test whether you’ll stick with LED before spending big.</li>
+            <li><strong>Catch:</strong> Not as powerful as £400+ clinical masks, but at this price you can test whether you’ll stick with LED before committing serious cash.</li>
           </ul>
           <div class="btnrow">
-            <a class="btn primary" href="https://www.amazon.co.uk/s?k=sensse+professional+led+face+mask&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=B08FJ7RGVD&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
           </div>
         </article>
 
@@ -315,9 +327,9 @@
             <span class="tag">App connected</span>
           </div>
           <ul>
-            <li><strong>Why it’s solid:</strong> Semi-flexible silicone moulds to your face. Red + near-infrared. Fast 10-minute sessions. Connects to app to track treatments (useful if you’re forgetful).</li>
-            <li><strong>Real talk:</strong> Women’s Health rated it highly. More comfortable than rigid masks, less cumbersome than full-silicone flexible ones. Good middle ground.</li>
-            <li><strong>Catch:</strong> £450 is steep when Sensse does 80% of the job for £140. Only worth it if comfort + app tracking matter to you.</li>
+            <li><strong>Why it’s solid:</strong> Semi-flexible silicone moulds to your face. Red + near-infrared. Fast 10-minute sessions. Connects to app to track treatments (useful if you’re forgetful or data-obsessed).</li>
+            <li><strong>Real talk:</strong> Women’s Health rated it highly. More comfortable than rigid masks, less floppy than full-silicone ones. Good middle ground.</li>
+            <li><strong>Catch:</strong> £450 is steep when Sensse does 80% of the job for £140. Only worth it if comfort + app tracking genuinely matter to you.</li>
           </ul>
           <div class="btnrow">
             <a class="btn primary" href="https://www.amazon.co.uk/s?k=lustre+renew+pro+led+mask&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
@@ -325,46 +337,46 @@
         </article>
 
         <article class="card">
-          <h3>Déesse PRO LED Mask</h3>
-          <div class="meta">
-            <span class="tag">£1,440</span>
-            <span class="tag">Clinical grade</span>
-            <span class="tag">4 wavelengths</span>
-          </div>
-          <ul>
-            <li><strong>Why it exists:</strong> 4 wavelengths for soft skin, decreased inflammation, quick sessions. Used in clinics. Women’s Health tested it.</li>
-            <li><strong>Real talk:</strong> If you’re spending £1,440 on an LED mask, you’re either rich or very committed. For most people, this is overkill.</li>
-            <li><strong>Catch:</strong> Unless you’re a beauty editor testing everything, save your money. Sensse will do the job for 90% less.</li>
-          </ul>
-          <div class="btnrow">
-            <a class="btn primary" href="https://www.amazon.co.uk/s?k=deesse+pro+led+mask&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
-          </div>
-        </article>
-
-        <article class="card">
           <h3>Silk’n Facial LED Mask</h3>
           <div class="meta">
             <span class="tag">£250–£300</span>
-            <span class="tag">Budget-friendly</span>
+            <span class="tag">Mid-tier</span>
             <span class="tag">10 min sessions</span>
           </div>
           <ul>
-            <li><strong>Why it’s popular:</strong> Good Housekeeping and Guardian both rated it. Quick 10-minute sessions, portable, easy to clean. Offers both short-term glow and long-term effects.</li>
-            <li><strong>Real talk:</strong> Decent middle option between Sensse (£140) and clinical-grade masks (£400+). If you want something that feels premium without the £400 price tag.</li>
-            <li><strong>Catch:</strong> Not on Amazon as often as Sensse. Check stock before you commit.</li>
+            <li><strong>Why it’s popular:</strong> Good Housekeeping and Guardian both rated it. Quick 10-minute sessions, portable, easy to clean. Offers both short-term glow and long-term texture improvements.</li>
+            <li><strong>Real talk:</strong> Decent middle option between budget Sensse and premium clinical masks. If you want something that feels a bit more premium without the £400+ price tag.</li>
+            <li><strong>Catch:</strong> Stock on Amazon UK can be patchy. Check availability before you get excited.</li>
           </ul>
           <div class="btnrow">
             <a class="btn primary" href="https://www.amazon.co.uk/s?k=silkn+facial+led+mask&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
           </div>
         </article>
+
+        <article class="card">
+          <h3>Budget LED wands (under £50)</h3>
+          <div class="meta">
+            <span class="tag">£30–£50</span>
+            <span class="tag">Low commitment</span>
+            <span class="tag">Targeted</span>
+          </div>
+          <ul>
+            <li><strong>Why they’re smart:</strong> If you’re not ready to drop £100+ on a full mask, LED wands let you test the concept on specific areas (forehead wrinkles, acne spots, under-eye bags).</li>
+            <li><strong>Real talk:</strong> Less coverage than a mask, but way less intimidating. Good for people who hate strapping things to their face.</li>
+            <li><strong>Catch:</strong> You have to manually move them around. Not a “set it and scroll” situation.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=led+light+therapy+wand&rh=p_36%3A-5000&tag=elgrecko-21" target="_blank" rel="nofollow noopener">See LED wands on Amazon</a>
+          </div>
+        </article>
       </div>
 
-      <p class="note"><strong>Honest verdict:</strong> If you’re starting out, get the Sensse (£140). If it becomes part of your routine and you want an upgrade in 6 months, then look at Lustre or Silk’n.</p>
+      <p class="note"><strong>Honest verdict:</strong> Start with Sensse (£140) if you’re curious. If it becomes part of your routine for 6 months and you want an upgrade, then look at Lustre or Silk’n. Don’t start with the £450 mask “just in case.”</p>
     </section>
 
     <section id="micro" class="section" aria-label="Microcurrent">
       <h2>Microcurrent devices</h2>
-      <p class="kicker">Marketed as “at-home facelifts.” Reality check: you’re buying a tiny zappy wand that needs conductive gel to work. Expect subtlety, not surgery.</p>
+      <p class="kicker">Marketed as “at-home facelifts.” Reality: you’re buying a tiny zappy wand that needs conductive gel. Expect subtle lifting over weeks, not Botox by Friday.</p>
 
       <div class="grid">
         <article class="card">
@@ -372,32 +384,15 @@
           <div class="meta">
             <span class="tag">£199</span>
             <span class="tag">Most popular</span>
-            <span class="tag">Travel size</span>
+            <span class="tag">FDA-approved</span>
           </div>
           <ul>
-            <li><strong>Why people love it:</strong> Same 335 microamp output as the £375 Trinity, but smaller and cheaper. Charges weekly. Cosmo/Forbes/Bazaar all rate it. FDA-approved.</li>
-            <li><strong>Real talk:</strong> Feels like tiny twitches under the skin (not painful). People report lifted cheekbones, clearer skin texture, and “less moon face.” Works if you’re consistent (3–5× per week).</li>
-            <li><strong>Catch:</strong> Gel costs £30 every 3 months. Factor that in. Also, you can’t add eye/lip attachments like Trinity can.</li>
+            <li><strong>Why people love it:</strong> Same 335 microamp output as the £375 Trinity, but smaller and cheaper. Charges weekly. Cosmo/Forbes/Bazaar all rate it. FDA-cleared (actually matters).</li>
+            <li><strong>Real talk:</strong> Feels like tiny twitches under the skin. People report lifted cheekbones, clearer jawline, less “moon face.” Works if you’re consistent (3–5×/week for 6+ weeks).</li>
+            <li><strong>Catch:</strong> Gel costs £30 every 3 months. Factor that in or you’ll resent the ongoing expense.</li>
           </ul>
           <div class="btnrow">
-            <a class="btn primary" href="https://www.amazon.co.uk/s?k=nuface+mini&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>NuFACE Trinity (or Trinity Pro)</h3>
-          <div class="meta">
-            <span class="tag">£375–£450</span>
-            <span class="tag">Pro version</span>
-            <span class="tag">Attachments</span>
-          </div>
-          <ul>
-            <li><strong>Why you’d upgrade:</strong> Same power as Mini (or 400 microamps for Trinity Pro), but you can buy attachments for eyes/lips or red LED wrinkle reducer.</li>
-            <li><strong>Real talk:</strong> Only worth it if you’ll actually buy and use the attachments. If not, save £200 and get the Mini.</li>
-            <li><strong>Catch:</strong> Attachments cost £100+ each. Budget accordingly or you’ve just paid £200 extra for nothing.</li>
-          </ul>
-          <div class="btnrow">
-            <a class="btn primary" href="https://www.amazon.co.uk/s?k=nuface+trinity&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=B08C7D5JVZ&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
           </div>
         </article>
 
@@ -409,12 +404,29 @@
             <span class="tag">6,000 pulses/min</span>
           </div>
           <ul>
-            <li><strong>Why it’s brilliant:</strong> Independent UK tested it against NuFACE (£385) and said it delivered similar results. 6,000 pulses per minute vs NuFACE’s 504. Visibly reduced crow’s feet after 6 months of use.</li>
+            <li><strong>Why it’s brilliant:</strong> Independent UK tested it against NuFACE (£385) and said it delivered similar results. 6,000 pulses/min vs NuFACE’s 504. Visibly reduced crow’s feet after 6 months of consistent use.</li>
             <li><strong>Real talk:</strong> This is the “try before you commit” option. If you hate the routine, you’ve wasted £40, not £400. At Boots for same-day pickup.</li>
-            <li><strong>Catch:</strong> Battery-powered (not rechargeable). Less fancy than NuFACE but does the job. Metal bar feels soothing around eyes.</li>
+            <li><strong>Catch:</strong> Battery-powered (not rechargeable). Requires AAA batteries. Less sleek than NuFACE but does the job.</li>
           </ul>
           <div class="btnrow">
             <a class="btn primary" href="https://www.amazon.co.uk/s?k=beautypro+t-bar+microcurrent&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>NuFACE Trinity (or Pro)</h3>
+          <div class="meta">
+            <span class="tag">£375–£450</span>
+            <span class="tag">Attachments</span>
+            <span class="tag">Upgradeable</span>
+          </div>
+          <ul>
+            <li><strong>Why you’d upgrade:</strong> Same power as Mini (or 400 microamps for Trinity Pro), but accepts attachments for eyes/lips or red LED wrinkle reducer.</li>
+            <li><strong>Real talk:</strong> Only worth it if you’ll actually buy and use the attachments (£100+ each). If not, save £200 and get the Mini.</li>
+            <li><strong>Catch:</strong> You’re paying for future-proofing. If you don’t upgrade with attachments within 6 months, you overpaid.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=nuface+trinity&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
           </div>
         </article>
 
@@ -423,12 +435,12 @@
           <div class="meta">
             <span class="tag">£79</span>
             <span class="tag">Combo device</span>
-            <span class="tag">Sonic vibration</span>
+            <span class="tag">USB rechargeable</span>
           </div>
           <ul>
-            <li><strong>Why it’s clever:</strong> Red LED + microcurrent + high-frequency sonic vibration in one wand. USB rechargeable, activates on skin touch. Portable.</li>
-            <li><strong>Real talk:</strong> Good if you want both LED and microcurrent but don’t want two separate gadgets cluttering your bathroom. £79 is low-risk.</li>
-            <li><strong>Catch:</strong> Less powerful than dedicated devices. It’s a jack-of-all-trades, master of none.</li>
+            <li><strong>Why it’s clever:</strong> Red LED + microcurrent + sonic vibration in one wand. USB rechargeable. Activates on skin contact. Portable enough to live in your bathroom.</li>
+            <li><strong>Real talk:</strong> Good if you want both LED and microcurrent without buying two gadgets. £79 is low-risk territory.</li>
+            <li><strong>Catch:</strong> Jack-of-all-trades, master of none. Less powerful than dedicated devices, but convenient if you hate clutter.</li>
           </ul>
           <div class="btnrow">
             <a class="btn primary" href="https://www.amazon.co.uk/s?k=beautypro+led+microcurrent+wand&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
@@ -436,75 +448,269 @@
         </article>
       </div>
 
-      <p class="note"><strong>Gel reality check:</strong> All microcurrent devices need conductive gel. NuFACE’s costs £30 for 3 months. Budget for it or you’ll be annoyed. Some people use aloe gel (£5) as a cheaper option — YMMV.</p>
+      <p class="note"><strong>Gel reality check:</strong> All microcurrent devices need conductive gel. NuFACE’s costs £30/3 months. Some people use aloe gel (£5) as a cheaper option — works for some, not others. Budget £10/month ongoing or you’ll resent the faff.</p>
     </section>
 
-    <section id="compare" class="section" aria-label="Comparisons">
-      <h2>LED vs microcurrent (quick version)</h2>
-      <p class="kicker">Honestly? Pick the one you’ll actually use. Both work if you’re consistent. Neither works if they live in a drawer.</p>
+    <section id="ipl" class="section" aria-label="IPL hair removal">
+      <h2>IPL hair removal</h2>
+      <p class="kicker">Tired of shaving every 3 days? IPL zaps hair follicles with light pulses to slow regrowth. Works best on dark hair + light skin. Not magic, but genuinely effective if you’re consistent.</p>
 
-      <div class="twoCol">
-        <div class="panel">
-          <h3>LED: set it and forget it</h3>
+      <div class="grid">
+        <article class="card">
+          <h3>Philips Lumea 9900</h3>
+          <div class="meta">
+            <span class="tag">£540</span>
+            <span class="tag">Best overall</span>
+            <span class="tag">4 attachments</span>
+          </div>
           <ul>
-            <li><strong>Effort level:</strong> Low. Strap it on, hit start, scroll your phone for 10 minutes.</li>
-            <li><strong>Ongoing cost:</strong> Zero (once you’ve bought it).</li>
-            <li><strong>Best for:</strong> People who want results without thinking too hard.</li>
+            <li><strong>Why it’s top:</strong> 4 intelligent attachments that auto-adjust light intensity per body area. Body, face, bikini, precision heads included. Independent UK testers saw less regrowth in 3–4 weeks.</li>
+            <li><strong>Real talk:</strong> Expensive, but if you’re serious about ditching waxing/shaving long-term, this pays for itself in 12–18 months vs salon IPL.</li>
+            <li><strong>Catch:</strong> Top-heavy design. Fine for legs, awkward for underarms. Corded (no battery).</li>
           </ul>
-        </div>
-        <div class="panel">
-          <h3>Microcurrent: slightly fiddly</h3>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=philips+lumea+9900&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Braun Silk-expert Pro IPL</h3>
+          <div class="meta">
+            <span class="tag">£400</span>
+            <span class="tag">SensoAdapt tech</span>
+            <span class="tag">2 heads</span>
+          </div>
           <ul>
-            <li><strong>Effort level:</strong> Medium. You need gel, a mirror, and 5–10 mins of actual focus.</li>
-            <li><strong>Ongoing cost:</strong> £10/month for gel (approx).</li>
-            <li><strong>Best for:</strong> People who enjoy routines and don’t mind the faff.</li>
+            <li><strong>Why it’s smart:</strong> SensoAdapt technology auto-adjusts intensity based on skin tone every 0.5 seconds. Body + precision head. Good Housekeeping saw 95% hair reduction after 12 weeks.</li>
+            <li><strong>Real talk:</strong> Faster than Philips for legs (bigger flash window). Slightly less versatile (only 2 heads vs Philips’ 4).</li>
+            <li><strong>Catch:</strong> Not cordless. You’re tethered to a plug socket.</li>
           </ul>
-        </div>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=braun+silk-expert+pro+5&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Ulike Air 3 IPL</h3>
+          <div class="meta">
+            <span class="tag">£200</span>
+            <span class="tag">Best budget</span>
+            <span class="tag">Cooling tech</span>
+          </div>
+          <ul>
+            <li><strong>Why it’s popular:</strong> Sapphire cooling tech reduces discomfort. Lightweight, easy to use. Independent testers called it “best budget IPL” in 2026 reviews.</li>
+            <li><strong>Real talk:</strong> Good starter IPL if you’re not sure you’ll commit long-term. Less powerful than Philips/Braun but half the price.</li>
+            <li><strong>Catch:</strong> No precision heads. Not ideal for upper lip unless you’re very careful.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=ulike+air+3+ipl&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Who should skip IPL</h3>
+          <div class="meta">
+            <span class="tag">Important</span>
+            <span class="tag">Read this</span>
+          </div>
+          <ul>
+            <li><strong>Dark skin tones:</strong> IPL doesn’t work safely on skin tones V–VI (Fitzpatrick scale). The light can’t distinguish hair from skin, risking burns.</li>
+            <li><strong>Light/grey/red hair:</strong> IPL needs dark pigment (melanin) to work. Blonde, ginger, grey, or white hair won’t respond.</li>
+            <li><strong>Pregnant/epileptic:</strong> Check contraindications. Most brands say no.</li>
+            <li><strong>Alternative:</strong> For darker skin or light hair, look at professional laser (diode/Nd:YAG) or electrolysis instead.</li>
+          </ul>
+        </article>
       </div>
+
+      <p class="note"><strong>Reality check:</strong> IPL takes 8–12 weeks to see real results. You need to use it weekly at first, then monthly for maintenance. If you can’t commit to that schedule, save your money.</p>
+    </section>
+
+    <section id="steamers" class="section" aria-label="Facial steamers">
+      <h2>Facial steamers</h2>
+      <p class="kicker">Not essential, but genuinely nice. Steam opens pores for deeper cleansing, helps serums absorb better, and feels like a mini spa session. Low-effort self-care.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Panasonic EH-XS01</h3>
+          <div class="meta">
+            <span class="tag">£100</span>
+            <span class="tag">Best compact</span>
+            <span class="tag">Nano steam</span>
+          </div>
+          <ul>
+            <li><strong>Why it’s loved:</strong> Nanoparticles 18,000× finer than standard steam. Helps stimulate collagen, reduces puffiness. Good Housekeeping scored it 88/100. Compact design (fits in small bathrooms).</li>
+            <li><strong>Real talk:</strong> 3-minute quick sessions or 6-minute full sessions. Heats up in under a minute. Genuinely relaxing before makeup or masks.</li>
+            <li><strong>Catch:</strong> £100 for a steamer feels steep. But if you love a ritual, it’s worth it.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=panasonic+EH-XS01&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Magnitone SteamAhead2</h3>
+          <div class="meta">
+            <span class="tag">£27</span>
+            <span class="tag">Budget winner</span>
+            <span class="tag">Multi-use</span>
+          </div>
+          <ul>
+            <li><strong>Why it’s smart:</strong> Doubles as diffuser + humidifier. Good Housekeeping scored it 80/100. Add essential oils for aromatherapy vibes. One tester used it for teenage acne — worked well.</li>
+            <li><strong>Real talk:</strong> At £27, it’s low-risk. If you use it 10 times, you’ve got your money’s worth.</li>
+            <li><strong>Catch:</strong> Less powerful than Panasonic. Fine for casual use, not “professional spa” results.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=magnitone+steamahead&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Generic nano steamers (under £40)</h3>
+          <div class="meta">
+            <span class="tag">£25–£40</span>
+            <span class="tag">Basic</span>
+            <span class="tag">Does the job</span>
+          </div>
+          <ul>
+            <li><strong>Why they exist:</strong> If you just want steam without fancy branding, generic nano steamers on Amazon work fine for basic pore-opening.</li>
+            <li><strong>Real talk:</strong> Check reviews carefully. Some smell weird after a few uses (even with distilled water). Look for 4+ stars from 100+ UK buyers.</li>
+            <li><strong>Catch:</strong> Build quality varies wildly. Might last 6 months, might last 2 years. Roll the dice at your own risk.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=nano+facial+steamer&rh=p_36%3A-4000&tag=elgrecko-21" target="_blank" rel="nofollow noopener">See budget steamers on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Do you even need one?</h3>
+          <div class="meta">
+            <span class="tag">Honest talk</span>
+          </div>
+          <ul>
+            <li><strong>Skip if:</strong> You already have a solid skincare routine and don’t need extra steps. A hot flannel does 70% of the job for free.</li>
+            <li><strong>Get one if:</strong> You love rituals, have congested pores, or want better serum absorption. Also great before clay masks.</li>
+            <li><strong>Tip:</strong> Use distilled water to avoid mineral buildup (extends lifespan).</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="note"><strong>Verdict:</strong> Steamers are a luxury, not a necessity. If £27–£100 feels like “why not,” go for it. If you’re on a tight budget, skip and spend on actives instead (retinol, niacinamide, vitamin C).</p>
+    </section>
+
+    <section id="guasha" class="section" aria-label="Gua sha and jade rollers">
+      <h2>Gua sha & jade rollers</h2>
+      <p class="kicker">Low-tech, low-cost tools for lymphatic drainage and de-puffing. Not magic, but if you’re consistent, they genuinely help with morning puffiness and product absorption.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Mount Lai Jade Gua Sha</h3>
+          <div class="meta">
+            <span class="tag">£25–£30</span>
+            <span class="tag">Premium quality</span>
+            <span class="tag">Authentic stone</span>
+          </div>
+          <ul>
+            <li><strong>Why it’s trusted:</strong> Authentic jade (not dyed or treated). Heart-shaped design perfect for jawline, cheeks, under-eyes. Founded by Stephanie Zheng based on her grandmother’s TCM rituals.</li>
+            <li><strong>Real talk:</strong> Feels smooth, doesn’t tug skin. Heavier weight = better quality. People notice sculpted jawline + reduced puffiness after 4–6 weeks of daily use.</li>
+            <li><strong>Catch:</strong> £30 feels expensive for a rock. But cheap ones (£5) are often dyed glass or resin that chip easily.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=mount+lai+jade+gua+sha&tag=elgrecko-21" target="_blank" rel="nofollow noopener">Check price on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Jade roller & gua sha sets</h3>
+          <div class="meta">
+            <span class="tag">£15–£40</span>
+            <span class="tag">Complete set</span>
+            <span class="tag">Gift-ready</span>
+          </div>
+          <ul>
+            <li><strong>Why they’re popular:</strong> Get both tools in one go. Usually includes velvet pouch + instructions. Available in jade, rose quartz, obsidian. Rose quartz stays cooler (better for de-puffing).</li>
+            <li><strong>Real talk:</strong> Good starter option if you’re not sure whether you prefer rolling or scraping. Keep in fridge for extra cooling effect.</li>
+            <li><strong>Catch:</strong> Quality varies massively on Amazon. Look for “100% natural stone” and UK reviews mentioning weight/smoothness.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=jade+roller+gua+sha+set&tag=elgrecko-21" target="_blank" rel="nofollow noopener">See sets on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Budget jade rollers (under £15)</h3>
+          <div class="meta">
+            <span class="tag">£8–£15</span>
+            <span class="tag">Low risk</span>
+            <span class="tag">Basic</span>
+          </div>
+          <ul>
+            <li><strong>Why they’re fine:</strong> If you just want to test whether you’ll use a roller, cheap ones from Amazon work for de-puffing. Not heirloom quality, but functional.</li>
+            <li><strong>Real talk:</strong> Some are dyed or low-grade stone. Check if the roller spins smoothly (cheap ones get stuck after a month).</li>
+            <li><strong>Catch:</strong> Might chip or crack if dropped. Not the end of the world at £10, but annoying.</li>
+          </ul>
+          <div class="btnrow">
+            <a class="btn primary" href="https://www.amazon.co.uk/s?k=jade+roller&rh=p_36%3A-1500&tag=elgrecko-21" target="_blank" rel="nofollow noopener">See budget rollers on Amazon</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Gua sha vs roller?</h3>
+          <div class="meta">
+            <span class="tag">Quick comparison</span>
+          </div>
+          <ul>
+            <li><strong>Gua sha:</strong> Better for sculpting, releasing tension, targeting specific areas (jawline, cheekbones). Requires technique (watch a YouTube tutorial first).</li>
+            <li><strong>Jade roller:</strong> Easier to use (just roll), better for general de-puffing and product absorption. Less targeted.</li>
+            <li><strong>Verdict:</strong> If you’re lazy or new, get a roller. If you want sculpting and don’t mind learning proper technique, get gua sha. Or get both in a set.</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="note"><strong>Reality check:</strong> These work for puffiness and product absorption, but won’t “contour your face” like surgery. Keep in fridge, use with serum or oil, and do it daily for best results. 2 minutes in the morning = noticeable difference in under-eye bags.</p>
     </section>
 
     <section id="faq" class="section" aria-label="FAQ">
       <h2>FAQ (honest answers)</h2>
-      <p class="kicker">The stuff people actually want to know before hitting “buy now.”</p>
+      <p class="kicker">The stuff people actually want to know before hitting “buy now.” No fluff, just straight answers.</p>
 
       <details>
-        <summary>LED or microcurrent — which one should I start with?</summary>
-        <p>LED if you want low-effort. Microcurrent if you don’t mind a slightly fiddlier routine with gel. But honestly? Whichever one you’ll actually use consistently is the right answer.</p>
+        <summary>Is any of this actually worth it, or is it all marketing hype?</summary>
+        <p>Mix of both. LED and microcurrent have clinical backing (decades of studies). IPL genuinely works if you match the right skin/hair combo. Gua sha and steamers are lower-tech but effective for what they do (depuffing, pore prep). The hype is in the “instant miracle” claims — everything here takes weeks of consistency. If you can’t commit to that, save your money.</p>
+      </details>
+
+      <details>
+        <summary>Which one should I buy first?</summary>
+        <p>Depends on your main gripe. Acne/redness? Start with LED. Puffy face/saggy jawline? Microcurrent or gua sha. Sick of shaving? IPL. Want a relaxing ritual? Steamer or jade roller. Don’t buy everything at once — you’ll use none of them.</p>
       </details>
 
       <details>
         <summary>How often do I need to use these?</summary>
-        <p>Follow what the manual says, but realistically: a short routine 3× a week beats an hour-long session once and then giving up forever.</p>
+        <p>Follow the manual, but generally: LED 3–5×/week, microcurrent 3–5×/week, IPL weekly for 8–12 weeks then monthly maintenance, steamers 2–3×/week, gua sha daily (2 mins). Short and consistent beats long and sporadic every time.</p>
       </details>
 
       <details>
         <summary>When will I see results?</summary>
-        <p>Weeks, not days. If you’re expecting Instagram-filter results by Friday, you’re going to be disappointed. And if your skin gets irritated, stop immediately.</p>
+        <p>LED/microcurrent: 4–8 weeks. IPL: 6–12 weeks. Gua sha/steamers: immediate for puffiness, 4+ weeks for texture. If you’re expecting magic by day 3, you’ll be disappointed. Stick with it or don’t bother.</p>
       </details>
 
       <details>
-        <summary>What’s actually important when choosing an LED mask?</summary>
-        <p>Comfort (will you wear it?), coverage (does it actually cover your face?), and a returns policy that doesn’t require a lawyer. “Most powerful” marketing means nothing if you use it twice.</p>
+        <summary>Can I return these after opening?</summary>
+        <p>Amazon’s UK return policy is usually 30 days, even if opened (as long as it’s not damaged). Check the specific listing — some third-party sellers have stricter rules. Always test within the return window.</p>
       </details>
 
       <details>
-        <summary>Do I really need conductive gel for microcurrent?</summary>
-        <p>Yes. Don’t try to wing it with moisturiser or water. It won’t work properly and it’ll feel weird. Buy the gel (or try aloe gel as a budget option).</p>
+        <summary>Do I really need the expensive versions?</summary>
+        <p>Not always. Sensse LED mask (£140) does 80% of what £450 masks do. BeautyPro microcurrent (£39) tested similarly to NuFACE (£385). But for IPL, the £200+ devices (Philips, Braun) genuinely outperform £80 knockoffs in power and safety. Spend on what matters for your use case.</p>
       </details>
 
       <details>
-        <summary>Is this safe for sensitive skin?</summary>
-        <p>Depends on your skin. Start gentle, keep sessions short, and if you get redness that doesn’t settle, stop. If you’ve got a diagnosed condition or you’re not sure, ask your GP.</p>
+        <summary>What about counterfeits and fakes?</summary>
+        <p>Stick to “Ships from and sold by Amazon UK” or verified brands. Avoid “too good to be true” prices (£50 for a “Philips Lumea” = fake). Check reviews for mentions of authenticity. If in doubt, buy from Boots/Argos/direct brand sites.</p>
       </details>
 
       <details>
-        <summary>Who shouldn’t use these?</summary>
-        <p>Check the manufacturer’s warnings, but generally: pregnant, epileptic, have a pacemaker (microcurrent), or take light-sensitive meds (LED). When in doubt, ask a professional, not Reddit.</p>
-      </details>
-
-      <details>
-        <summary>Can I return it after opening the box?</summary>
-        <p>Amazon’s return policy is usually good (30 days), but check the listing. Some sellers treat skincare gadgets as personal-care items (no returns once opened).</p>
+        <summary>Who should avoid these devices?</summary>
+        <p>Pregnant: skip microcurrent, IPL, most LED (check contraindications). Epileptic: avoid flashing lights (LED, IPL). Pacemaker: no microcurrent. Dark skin tones (V–VI): most IPL unsafe (burns risk). Light/grey/ginger hair: IPL won’t work. When in doubt, ask your GP, not TikTok.</p>
       </details>
 
     </section>
@@ -513,7 +719,7 @@
       <div class="footgrid">
         <div>
           <div><strong>SkinGadget UK</strong> — helping you not waste money on skincare gadgets you’ll use twice.</div>
-          <div class="fine">Amazon Associate disclosure: I earn a small commission from qualifying purchases. It doesn’t cost you extra.</div>
+          <div class="fine">Amazon Associate disclosure: I earn a small commission from qualifying purchases (at no extra cost to you). It doesn’t change the price you pay, and it helps keep this site honest and ad-free.</div>
           <div class="fine"><a href="privacy.html">Privacy policy</a> · <a href="#top">Back to top</a></div>
         </div>
         <div class="fine">Last updated: <span id="lastUpdated">2026‑02‑28</span></div>
